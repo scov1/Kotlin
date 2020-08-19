@@ -1,0 +1,139 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.core:core-ktx:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/43be2a3902854fbcfa492e08f0af9bb7/jetified-core-ktx-1.3.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/c43e18b4576c8dc53a82b1c0098e41e6/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba43fd018a1c05aafda8cd649ed4464d/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba23632c6d8e40a4f9fb0ef86cfc0185/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/a5f4a0ea7145d79858310dfc3673a834/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/604b51e10d9490664dbb80d3323559c4/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/77d91df389b319c148ed004a8f06e080/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/89083432693478dec522d534b0838d0c/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/78fa7520053069751066c1e5d2b88b10/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/631d776a50d057597b560c1f0de5553c/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/7c9b0a7ba9dd6be5123a741270cd8c33/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/a7b75eaf604533ddb97ab5f9408891b9/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/cdd00e9db6d7955a250262b50637464e/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/e246b79da29349870ec3910147715236/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/83b0e3f2639c46519222f6b8c96ea43b/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/cc812ceffdb964c568278e96c546b52f/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/8fff98409f3a28cfb999b63a772d1533/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/1360489fa0407e8c22f53f5d48145551/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/217231a766dc05280e49e269a61ef265/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/bbdb243f1bee2ca4ce89ee88d13a020e/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/c89d44e8b4ed5d5dd560ae4aa8ed06c0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/8fb6d537eb998063d8b2c2868760fb9d/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:3:5-30
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba43fd018a1c05aafda8cd649ed4464d/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba43fd018a1c05aafda8cd649ed4464d/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/cdd00e9db6d7955a250262b50637464e/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/cdd00e9db6d7955a250262b50637464e/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/83b0e3f2639c46519222f6b8c96ea43b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/83b0e3f2639c46519222f6b8c96ea43b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/cdd00e9db6d7955a250262b50637464e/core-1.3.1/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:11:9-40
+activity#org.step.social.MainActivity
+ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+MERGED from [androidx.core:core-ktx:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/43be2a3902854fbcfa492e08f0af9bb7/jetified-core-ktx-1.3.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/43be2a3902854fbcfa492e08f0af9bb7/jetified-core-ktx-1.3.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/c43e18b4576c8dc53a82b1c0098e41e6/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/c43e18b4576c8dc53a82b1c0098e41e6/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba43fd018a1c05aafda8cd649ed4464d/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba43fd018a1c05aafda8cd649ed4464d/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba23632c6d8e40a4f9fb0ef86cfc0185/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/ba23632c6d8e40a4f9fb0ef86cfc0185/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/a5f4a0ea7145d79858310dfc3673a834/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/a5f4a0ea7145d79858310dfc3673a834/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/604b51e10d9490664dbb80d3323559c4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/604b51e10d9490664dbb80d3323559c4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/77d91df389b319c148ed004a8f06e080/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/77d91df389b319c148ed004a8f06e080/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/89083432693478dec522d534b0838d0c/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/89083432693478dec522d534b0838d0c/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/78fa7520053069751066c1e5d2b88b10/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/78fa7520053069751066c1e5d2b88b10/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/631d776a50d057597b560c1f0de5553c/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/631d776a50d057597b560c1f0de5553c/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/7c9b0a7ba9dd6be5123a741270cd8c33/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/7c9b0a7ba9dd6be5123a741270cd8c33/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/a7b75eaf604533ddb97ab5f9408891b9/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/a7b75eaf604533ddb97ab5f9408891b9/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/cdd00e9db6d7955a250262b50637464e/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/seda/.gradle/caches/transforms-2/files-2.1/cdd00e9db6d7955a250262b50637464e/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/e246b79da29349870ec3910147715236/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/e246b79da29349870ec3910147715236/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/83b0e3f2639c46519222f6b8c96ea43b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/83b0e3f2639c46519222f6b8c96ea43b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/cc812ceffdb964c568278e96c546b52f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/cc812ceffdb964c568278e96c546b52f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/8fff98409f3a28cfb999b63a772d1533/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/8fff98409f3a28cfb999b63a772d1533/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/1360489fa0407e8c22f53f5d48145551/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/1360489fa0407e8c22f53f5d48145551/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/217231a766dc05280e49e269a61ef265/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/217231a766dc05280e49e269a61ef265/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/bbdb243f1bee2ca4ce89ee88d13a020e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/bbdb243f1bee2ca4ce89ee88d13a020e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/c89d44e8b4ed5d5dd560ae4aa8ed06c0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/c89d44e8b4ed5d5dd560ae4aa8ed06c0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/8fb6d537eb998063d8b2c2868760fb9d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/seda/.gradle/caches/transforms-2/files-2.1/8fb6d537eb998063d8b2c2868760fb9d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seda/AndroidStudioProjects/Social/app/src/main/AndroidManifest.xml
