@@ -1,0 +1,4 @@
+#Wed Aug 19 17:05:03 ALMT 2020
+base.0=/Users/seda/AndroidStudioProjects/TestLogs/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
