@@ -1,0 +1,4 @@
+#Sat Aug 22 14:52:36 ALMT 2020
+base.0=/Users/seda/AndroidStudioProjects/speech/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
