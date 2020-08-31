@@ -1,20 +1,42 @@
 package org.step.students
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_detail_students.*
+import kotlinx.android.synthetic.main.fragment_students.*
 
 
 class StudentsFragment : Fragment() {
 
-    val students:ArrayList<Student> = ArrayList()
+
+    var students:ArrayList<Student> = ArrayList()
     var recyclerView : RecyclerView? = null
     var adapter : StudentAdapter? = null
     private var rootView : View? = null
+    companion object{
+        val INTENT_PARCELABLE = "OBJECT_INTENT"
+    }
+
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        val bundle = this.arguments
+//        if(bundle!=null){
+//            val stud = bundle.getParcelable<Student>("STUDENT")
+//            stud.let {
+//                if (it != null) {
+//                    students.add(it)
+//                }
+//            }
+//        }
+//    }
 
 
     override fun onCreateView(
@@ -30,33 +52,44 @@ class StudentsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initializeView()
-        initializeData()
-        initializeRecyclerView()
         initializeLayoutManager()
-
+        initializeData()
+    //    initializeRecyclerView()
+        adapter?.notifyDataSetChanged()
+        Log.d("Adapter","Initialize")
 
     }
 
 
     private fun initializeData(){
-        students.add(Student().apply { avatar=R.drawable.img1; name = "Tom Ford";desc= "Good person!" })
-        students.add(Student().apply { avatar=R.drawable.img1; name = "Roberto Cavalli";desc= "Good man!" })
-        students.add(Student().apply { avatar=R.drawable.img1; name = "Dior";desc= "Good girl!" })
+//        students= ArrayList<Student>().apply { add(Student( "Tom Ford","Good person!",R.drawable.img1, ))
+//            add(Student( "Roberto Cavalli","Good man!",R.drawable.img1, ))
+//            add(Student( "Dior","Good girl!",R.drawable.img1, ))
+//        }
+
+        students.add(Student("Tom Ford","Good person!",R.drawable.img1))
+        students.add(Student( "Roberto Cavalli","Good man!",R.drawable.img1 ))
+        students.add(Student( "Dior","Good girl!",R.drawable.img1 ))
     }
 
 
     private fun initializeLayoutManager(){
         recyclerView?.layoutManager = LinearLayoutManager(context)
-        recyclerView?.adapter = StudentAdapter(students)
+
+
+        recyclerView?.adapter = StudentAdapter(context!! ,students){
+            val intent = Intent(view!!.context,DetailStudents::class.java)
+            intent.putExtra(INTENT_PARCELABLE,it)
+            startActivity(intent)
+
+        }
     }
+
 
     private fun initializeView(){
         recyclerView = rootView?.findViewById(R.id.recyclerview_fragment_students)
     }
 
-    private fun initializeRecyclerView(){
-        recyclerView?.adapter = adapter
-    }
 
 
 }

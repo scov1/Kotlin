@@ -1,8 +1,12 @@
 package org.step.students
 
-class Student {
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-    var name : String = ""
-    var desc : String = ""
+@Parcelize
+data class Student (
+
+    var name : String,
+    var desc : String,
     var avatar : Int? = null
-}
+    ) : Parcelable
