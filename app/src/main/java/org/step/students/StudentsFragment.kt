@@ -67,9 +67,9 @@ class StudentsFragment : Fragment() {
 //            add(Student( "Dior","Good girl!",R.drawable.img1, ))
 //        }
 
-        students.add(Student("Tom Ford","Good person!",R.drawable.img1))
-        students.add(Student( "Roberto Cavalli","Good man!",R.drawable.img1 ))
-        students.add(Student( "Dior","Good girl!",R.drawable.img1 ))
+        students.add(Student("Tom Ford","Good person!","SEP-172",R.drawable.img1))
+        students.add(Student( "Roberto Cavalli","Good man!","SEB-181",R.drawable.img1))
+        students.add(Student( "Dior","Good girl!","SEP-182" ,R.drawable.img1))
     }
 
 
@@ -89,7 +89,5 @@ class StudentsFragment : Fragment() {
     private fun initializeView(){
         recyclerView = rootView?.findViewById(R.id.recyclerview_fragment_students)
     }
-
-
 
 }

@@ -45,4 +45,18 @@
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_activity_detail_students_name" />
+
+    <TextView
+        android:id="@+id/textView_activity_detail_viewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_activity_detail_students_desc"
+        app:layout_constraintVertical_bias="0.262" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

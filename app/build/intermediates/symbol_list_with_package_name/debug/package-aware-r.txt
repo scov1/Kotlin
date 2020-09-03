@@ -1924,8 +1924,10 @@ id textSpacerNoTitle
 id textStart
 id textView_activity_detail_students_desc
 id textView_activity_detail_students_name
+id textView_activity_detail_viewGroup
 id textView_fragment_item_desc
 id textView_fragment_item_name
+id textView_fragment_item_viewGroup
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
