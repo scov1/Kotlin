@@ -725,13 +725,10 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
-id action_btn_img
-id action_btn_phone
 id action_container
 id action_context_bar
 id action_divider
 id action_image
-id action_img
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -749,6 +746,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id button_activity_main_img
 id center_vertical
 id chains
 id checkbox
@@ -779,6 +777,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView_activity_main_img
 id info
 id invisible
 id italic

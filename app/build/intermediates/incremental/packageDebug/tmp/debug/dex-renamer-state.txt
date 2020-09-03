@@ -1,4 +1,4 @@
-#Sat Aug 22 11:41:48 ALMT 2020
+#Thu Sep 03 10:21:22 ALMT 2020
 base.0=/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -12,12 +12,12 @@
         "source": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/seda/AndroidStudioProjects/CallPhoneCamera/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
