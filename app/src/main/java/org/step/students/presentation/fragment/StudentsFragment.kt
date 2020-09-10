@@ -1,21 +1,23 @@
-package org.step.students
+package org.step.students.presentation.fragment
 
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.fragment_item.*
 
 import kotlinx.android.synthetic.main.fragment_students.*
+import org.step.students.presentation.interfaces.ListenerStudent
+import org.step.students.R
+import org.step.students.data.Student
 import org.step.students.domain.StudentUtilsUseCase
+import org.step.students.presentation.adapter.StudentAdapter
 
 
-class StudentsFragment : Fragment(),ListenerStudent{
+class StudentsFragment : Fragment(), ListenerStudent {
 
 
     var students:ArrayList<Student> = ArrayList()
@@ -127,7 +129,7 @@ class StudentsFragment : Fragment(),ListenerStudent{
         initializeAdapter()
     }
 
-     fun addStudent(student: Student,students:ArrayList<Student>) {
+     fun addStudent(student: Student, students:ArrayList<Student>) {
         students.add(student)
         adapter!!.notifyDataSetChanged()
     }

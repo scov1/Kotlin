@@ -1,6 +1,6 @@
 package org.step.students.domain
 
-import org.step.students.Student
+import org.step.students.data.Student
 
 class StudentUtilsUseCase {
 

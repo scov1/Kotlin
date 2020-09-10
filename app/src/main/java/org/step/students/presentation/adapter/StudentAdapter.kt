@@ -1,15 +1,12 @@
-package org.step.students
+package org.step.students.presentation.adapter
 
-import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import org.step.students.presentation.interfaces.ListenerStudent
+import org.step.students.R
+import org.step.students.presentation.viewholder.StudentViewHolder
+import org.step.students.data.Student
 
 
 class StudentAdapter(

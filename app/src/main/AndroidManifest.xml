@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".DetailStudents" android:noHistory="true" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentation.activity.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,13 +1,14 @@
-package org.step.students
+package org.step.students.presentation.viewholder
 
 import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
 import androidx.recyclerview.widget.RecyclerView
-import java.text.FieldPosition
+import org.step.students.presentation.interfaces.ListenerStudent
+import org.step.students.R
+import org.step.students.data.Student
 
 class StudentViewHolder(view:View,var listener: ListenerStudent):RecyclerView.ViewHolder(view) {
 
@@ -18,7 +19,7 @@ class StudentViewHolder(view:View,var listener: ListenerStudent):RecyclerView.Vi
         private val userMark : TextView = itemView.findViewById(R.id.textView_fragment_item_mark)
 
 
-        fun bindView(student: Student,position: Int) {
+        fun bindView(student: Student, position: Int) {
             student.avatar?.let { img.setImageResource(it) }
             userName.text = student.name
             userDesc.text = student.desc

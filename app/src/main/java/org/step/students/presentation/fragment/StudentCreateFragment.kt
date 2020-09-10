@@ -1,7 +1,6 @@
-package org.step.students
+package org.step.students.presentation.fragment
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -13,15 +12,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_student_create.*
+import org.step.students.presentation.activity.MainActivity
+import org.step.students.R
+import org.step.students.data.Student
 
 
 class StudentCreateFragment : Fragment() {
@@ -71,7 +68,9 @@ class StudentCreateFragment : Fragment() {
 
      private fun initializeViews(){
 
-         imageView_fragment_student_create_img?.setImageDrawable(ContextCompat.getDrawable(view?.context!!,R.drawable.img1))
+         imageView_fragment_student_create_img?.setImageDrawable(ContextCompat.getDrawable(view?.context!!,
+             R.drawable.img1
+         ))
 
     }
 

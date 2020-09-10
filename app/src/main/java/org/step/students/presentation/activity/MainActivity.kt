@@ -1,15 +1,16 @@
-package org.step.students
+package org.step.students.presentation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_item.*
-import kotlinx.android.synthetic.main.fragment_students.*
+import org.step.students.R
+import org.step.students.data.Student
+import org.step.students.presentation.fragment.StudentCreateFragment
+import org.step.students.presentation.fragment.StudentsFragment
 
 class MainActivity : AppCompatActivity() {
 

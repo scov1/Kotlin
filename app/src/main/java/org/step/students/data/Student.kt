@@ -1,4 +1,4 @@
-package org.step.students
+package org.step.students.data
 
 import android.os.Parcel
 import android.os.Parcelable
