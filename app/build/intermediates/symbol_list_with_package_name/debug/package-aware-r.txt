@@ -1542,6 +1542,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_add_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1669,7 +1670,10 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_fragment_students_plus_student
 id buttonPanel
+id button_fragment_student_create_add_student
+id button_fragment_student_create_photo
 id cancel_action
 id cancel_button
 id center
@@ -1761,8 +1765,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView_activity_detail_students_avatar
+id imageView_fragment_detail_students_avatar
 id imageView_fragment_item_photo
+id imageView_fragment_student_create_img
 id info
 id invisible
 id italic
@@ -1922,12 +1927,15 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView_activity_detail_students_desc
-id textView_activity_detail_students_name
-id textView_activity_detail_viewGroup
+id textView_fragment_detail_students_desc
+id textView_fragment_detail_students_name
+id textView_fragment_detail_viewGroup
 id textView_fragment_item_desc
 id textView_fragment_item_name
 id textView_fragment_item_viewGroup
+id textView_fragment_student_create_desc
+id textView_fragment_student_create_group
+id textView_fragment_student_create_name
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2024,7 +2032,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_detail_students
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2042,7 +2049,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_detail_students
 layout fragment_item
+layout fragment_student_create
 layout fragment_students
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
