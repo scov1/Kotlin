@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private val studentFragment = StudentsFragment()
     private val createStudentsFragment = StudentCreateFragment()
     private var currentFragment : Fragment? = null
+    var students:ArrayList<Student> = ArrayList()
     var isVisibility: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +46,10 @@ class MainActivity : AppCompatActivity() {
 
         btn_fragment_students_sort_random.setOnClickListener {
             studentFragment.sortByRandom()
+        }
+
+        btn_fragment_students_best_students.setOnClickListener {
+            studentFragment.getTop()
         }
 
 

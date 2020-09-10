@@ -24,7 +24,7 @@
         <activity
             android:name="org.step.students.DetailStudents"
             android:noHistory="true" />
-        <activity android:name="org.step.students.MainActivity" >
+        <activity android:name="org.step.students.presentation.activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

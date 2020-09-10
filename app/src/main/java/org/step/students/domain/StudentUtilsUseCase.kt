@@ -16,19 +16,28 @@ class StudentUtilsUseCase {
         return students.shuffle()
     }
 
- //   fun searchByName(students: ArrayList<Student>, query : String):ArrayList<Student> {
-//        if(query.isNotEmpty()){
-//            students.forEach { student->
-//                student.show = student.name.toUpperCase().indexOf(query.toUpperCase())>-1
-//            }
-//        }else{
-//            students.forEach { student->student.show=true }
-//        }
-//        return students
- //   }
-        fun search(students: ArrayList<Student>, search: String): ArrayList<Student> {
+    fun search(students: ArrayList<Student>, search: String): ArrayList<Student> {
             search.trim(' ')
             val filtered = students.filter { it.name!!.toLowerCase().contains(search.toLowerCase()) }
             return ArrayList(filtered)
+    }
+
+    fun getTopStudents(students: ArrayList<Student>): ArrayList<Student> {
+
+        val topStudentsByMark: ArrayList<Student> = ArrayList()
+        var topStudent: Student
+
+        for (i: Int in 0 until 3) {
+            topStudent = students.first()
+            for (student in students) {
+                if(student.mark!! < topStudent.mark!!) {
+                    topStudent = student
+                }
+            }
+            topStudentsByMark.add(topStudent)
+            students.remove(topStudent)
         }
+
+        return topStudentsByMark
+    }
 }

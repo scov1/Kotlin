@@ -38,9 +38,9 @@
 24-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:19-49
 25            android:noHistory="true" />
 25-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:50-74
-26        <activity android:name="org.step.students.MainActivity" >
+26        <activity android:name="org.step.students.presentation.activity.MainActivity" >
 26-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:9-23:20
-26-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:19-47
+26-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:19-69
 27            <intent-filter>
 27-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:18:13-22:29
 28                <action android:name="android.intent.action.MAIN" />

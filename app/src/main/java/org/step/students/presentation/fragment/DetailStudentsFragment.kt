@@ -14,11 +14,11 @@ import org.step.students.data.Student
 class DetailStudentsFragment : Fragment() {
 
 
-    var img : ImageView? = null
-    var nameDetail : TextView? = null
-    var descDetail : TextView? = null
-    var groupDetail : TextView? = null
-    var markDetail : TextView? = null
+    private var img : ImageView? = null
+    private var nameDetail : TextView? = null
+    private var descDetail : TextView? = null
+    private var groupDetail : TextView? = null
+    private var markDetail : TextView? = null
     private var rootView : View? = null
     var student: Student? = null;
 
@@ -49,8 +49,6 @@ class DetailStudentsFragment : Fragment() {
 
     private fun initializeView(){
 
-
-       // student = rootView?.intent.getParcelableExtra<Student>(StudentsFragment.INTENT_PARCELABLE)
         img = rootView?.findViewById(R.id.imageView_fragment_detail_students_avatar)
         nameDetail = rootView?.findViewById(R.id.textView_fragment_detail_students_name)
         descDetail = rootView?.findViewById(R.id.textView_fragment_detail_students_desc)

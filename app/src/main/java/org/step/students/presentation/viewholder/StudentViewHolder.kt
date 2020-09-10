@@ -10,7 +10,7 @@ import org.step.students.presentation.interfaces.ListenerStudent
 import org.step.students.R
 import org.step.students.data.Student
 
-class StudentViewHolder(view:View,var listener: ListenerStudent):RecyclerView.ViewHolder(view) {
+class StudentViewHolder(view:View, private var listener: ListenerStudent):RecyclerView.ViewHolder(view) {
 
         private val img: ImageView = itemView.findViewById(R.id.imageView_fragment_item_photo)
         private val userName: TextView = itemView.findViewById(R.id.textView_fragment_item_name)

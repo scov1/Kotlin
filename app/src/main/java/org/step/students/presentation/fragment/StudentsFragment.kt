@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_main.*
 
 import kotlinx.android.synthetic.main.fragment_students.*
 import org.step.students.presentation.interfaces.ListenerStudent
@@ -73,6 +74,9 @@ class StudentsFragment : Fragment(), ListenerStudent {
         students.add(Student("Tom Ford","Good Man!" ,"SEP-172",10f, R.drawable.img1))
         students.add(Student("Roberto Cavalli","Miuuu" ,"SEB-181",12f, R.drawable.img1))
         students.add(Student("Dior","Good girl", "SEP-182",8f, R.drawable.img1))
+        students.add(Student("Armani","Good Man!" ,"SEP-172",7f, R.drawable.img1))
+        students.add(Student("Tommy Hilfiger","Miuuu" ,"SEB-181",11f, R.drawable.img1))
+        students.add(Student("Lacoste","Good girl", "SEP-182",5f, R.drawable.img1))
 
     }
 
@@ -90,6 +94,8 @@ class StudentsFragment : Fragment(), ListenerStudent {
      private fun initializeRecyclerView(){
         val layoutManager : RecyclerView.LayoutManager = LinearLayoutManager(view!!.context)
         recyclerview_fragment_students.layoutManager = layoutManager
+
+
     }
 
     private fun initializeListeners(){
@@ -147,6 +153,13 @@ class StudentsFragment : Fragment(), ListenerStudent {
         }
         adapter!!.notifyDataSetChanged()
     }
+
+    fun getTop(){
+        StudentUtilsUseCase().getTopStudents(students)
+        adapter!!.notifyDataSetChanged()
+
+    }
+
 }
 
 

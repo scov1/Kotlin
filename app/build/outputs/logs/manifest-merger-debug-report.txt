@@ -94,10 +94,10 @@ ADDED from /Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManife
 		ADDED from /Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:50-74
 	android:name
 		ADDED from /Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:19-49
-activity#org.step.students.MainActivity
+activity#org.step.students.presentation.activity.MainActivity
 ADDED from /Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:9-23:20
 	android:name
-		ADDED from /Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:19-47
+		ADDED from /Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:19-69
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
