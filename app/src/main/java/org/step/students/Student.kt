@@ -9,13 +9,14 @@ data class Student(
     var name: String?,
     var desc: String?,
     var group: String?,
+    var mark: Float? = null,
     var avatar: Int? = null
     ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-        parcel.readValue(Int::class.java.classLoader) as? Int
+   //     parcel.readValue(Int::class.java.classLoader) as? Int
     ) {
     }
 

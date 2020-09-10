@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_item.*
 
 import kotlinx.android.synthetic.main.fragment_students.*
+import org.step.students.domain.StudentUtilsUseCase
 
 
 class StudentsFragment : Fragment(),ListenerStudent{
@@ -20,7 +21,6 @@ class StudentsFragment : Fragment(),ListenerStudent{
     var students:ArrayList<Student> = ArrayList()
     var adapter : StudentAdapter? = null
     private var rootView : View? = null
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,8 +54,6 @@ class StudentsFragment : Fragment(),ListenerStudent{
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         initializeData()
         initializeAdapter()
         initializeRecyclerView()
@@ -64,17 +62,15 @@ class StudentsFragment : Fragment(),ListenerStudent{
 
         adapter?.notifyDataSetChanged()
 
-
         Log.d("Adapter", "Initialize")
 
     }
 
     private fun initializeData(){
 
-        students.add(Student("Tom Ford","Good Man!" ,"SEP-172", R.drawable.img1))
-        students.add(Student("Roberto Cavalli","Miuuu" ,"SEB-181", R.drawable.img1))
-        students.add(Student("Dior","Good girl", "SEP-182", R.drawable.img1))
-
+        students.add(Student("Tom Ford","Good Man!" ,"SEP-172",10f, R.drawable.img1))
+        students.add(Student("Roberto Cavalli","Miuuu" ,"SEB-181",12f, R.drawable.img1))
+        students.add(Student("Dior","Good girl", "SEP-182",8f, R.drawable.img1))
 
     }
 
@@ -82,16 +78,11 @@ class StudentsFragment : Fragment(),ListenerStudent{
     private fun initializeLayoutManager(){
         recyclerview_fragment_students?.layoutManager = LinearLayoutManager(context)
 
-
-
-
-
     }
 
     private fun initializeAdapter(){
         adapter = StudentAdapter(students,this)
     }
-
 
 
      private fun initializeRecyclerView(){
@@ -121,13 +112,37 @@ class StudentsFragment : Fragment(),ListenerStudent{
 
     }
 
-//     fun addStudent(name1 : String,desc1 : String,group1 : String,img : Int) {
-//        students.add(Student().apply { name = "$name1 desc = $desc1 group= $group1"; avatar = img})
-//
-//    }
+    fun sortByName(){
+        StudentUtilsUseCase().sortByName(students)
+        initializeAdapter()
+    }
+
+    fun sortByMark(){
+        StudentUtilsUseCase().sortByMark(students)
+        initializeAdapter()
+    }
+
+    fun sortByRandom(){
+        StudentUtilsUseCase().sortByRandom(students)
+        initializeAdapter()
+    }
 
      fun addStudent(student: Student,students:ArrayList<Student>) {
         students.add(student)
+        adapter!!.notifyDataSetChanged()
+    }
+
+    fun searchName(searchText: String) {
+        if(searchText == "" && students.size >-1) {
+            students.clear()
+            students.addAll(students)
+           // sortArrayByMarks()
+        }
+        else {
+            val newStudents = StudentUtilsUseCase().search(students, searchText)
+            students.clear()
+            students.addAll(newStudents)
+        }
         adapter!!.notifyDataSetChanged()
     }
 }

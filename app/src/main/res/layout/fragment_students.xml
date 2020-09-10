@@ -9,13 +9,11 @@
     tools:context=".StudentsFragment">
 
 
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_fragment_students"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 

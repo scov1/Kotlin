@@ -16,6 +16,7 @@ class DetailStudentsFragment : Fragment() {
     var nameDetail : TextView? = null
     var descDetail : TextView? = null
     var groupDetail : TextView? = null
+    var markDetail : TextView? = null
     private var rootView : View? = null
     var student:Student? = null;
 
@@ -52,12 +53,14 @@ class DetailStudentsFragment : Fragment() {
         nameDetail = rootView?.findViewById(R.id.textView_fragment_detail_students_name)
         descDetail = rootView?.findViewById(R.id.textView_fragment_detail_students_desc)
         groupDetail = rootView?.findViewById(R.id.textView_fragment_detail_viewGroup)
+        markDetail = rootView?.findViewById(R.id.textView_fragment_detail_mark)
 
 
         student?.avatar?.let { img?.setImageResource(it) }
         nameDetail?.text= student?.name
         descDetail?.text = student?.desc
         groupDetail?.text = student?.group
+        markDetail?.text = student?.mark.toString()
 
 
     }

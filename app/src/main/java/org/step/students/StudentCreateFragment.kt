@@ -13,7 +13,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
@@ -23,7 +25,6 @@ import kotlinx.android.synthetic.main.fragment_student_create.*
 
 
 class StudentCreateFragment : Fragment() {
-//    val fragment = StudentsFragment()
 
     private var rootView : View? = null
 
@@ -61,25 +62,17 @@ class StudentCreateFragment : Fragment() {
 
         button_fragment_student_create_add_student.setOnClickListener{
             initializeData()
-//            addStudent()
         }
 
+
+
     }
-//
-//    fun initializeData(){
-//
-//        name = textView_fragment_student_create_name.text.toString()
-//        desc = textView_fragment_student_create_desc.text.toString()
-//        group = textView_fragment_student_create_group.text.toString()
-//        img = imageView_fragment_student_create_img.imageAlpha
-//    }
+
 
      private fun initializeViews(){
 
-//         val fragmentManager = fragmentManager
-//         fragmentManager?.popBackStack()
-
          imageView_fragment_student_create_img?.setImageDrawable(ContextCompat.getDrawable(view?.context!!,R.drawable.img1))
+
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -114,7 +107,7 @@ class StudentCreateFragment : Fragment() {
                         textView_fragment_student_create_name.text.toString(),
                         textView_fragment_student_create_desc.text.toString(),
                         textView_fragment_student_create_group.text.toString(),
-                        //imageView_fragment_student_create_img.setImageDrawable(R.drawable.img1)
+                        textView_fragment_student_create_mark.text.toString().toFloat()
 
                     )
 

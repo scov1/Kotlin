@@ -1671,6 +1671,9 @@ id blocking
 id bottom
 id bounce
 id btn_fragment_students_plus_student
+id btn_fragment_students_sort_mark
+id btn_fragment_students_sort_name
+id btn_fragment_students_sort_random
 id buttonPanel
 id button_fragment_student_create_add_student
 id button_fragment_student_create_photo
@@ -1729,6 +1732,7 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editText_fragment_students_search
 id edit_query
 id end
 id end_padder
@@ -1927,14 +1931,17 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView_fragment_detail_mark
 id textView_fragment_detail_students_desc
 id textView_fragment_detail_students_name
 id textView_fragment_detail_viewGroup
 id textView_fragment_item_desc
+id textView_fragment_item_mark
 id textView_fragment_item_name
 id textView_fragment_item_viewGroup
 id textView_fragment_student_create_desc
 id textView_fragment_student_create_group
+id textView_fragment_student_create_mark
 id textView_fragment_student_create_name
 id text_input_end_icon
 id text_input_start_icon

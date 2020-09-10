@@ -2,6 +2,10 @@ package org.step.students
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.view.View
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_item.*
@@ -21,9 +25,39 @@ class MainActivity : AppCompatActivity() {
         initializeFragment(StudentsFragment())
 
 
+
         btn_fragment_students_plus_student.setOnClickListener{
             initializeFragment(StudentCreateFragment())
+            btn_fragment_students_sort_mark.visibility = View.GONE
+            btn_fragment_students_sort_name.visibility = View.GONE
+            btn_fragment_students_sort_random.visibility = View.GONE
+            editText_fragment_students_search.visibility = View.GONE
         }
+
+        btn_fragment_students_sort_name.setOnClickListener {
+            studentFragment.sortByName()
+        }
+
+        btn_fragment_students_sort_mark.setOnClickListener {
+            studentFragment.sortByMark()
+        }
+
+        btn_fragment_students_sort_random.setOnClickListener {
+            studentFragment.sortByRandom()
+        }
+
+
+        editText_fragment_students_search.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {}
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                if(s.isNullOrEmpty())
+                    studentFragment.searchName("")
+                else
+                    studentFragment.searchName(editText_fragment_students_search.text.toString())
+            }
+        })
+
     }
 
     private fun initializeFragment(fragment: Fragment) {
@@ -32,6 +66,7 @@ class MainActivity : AppCompatActivity() {
             currentFragment = StudentsFragment()
             supportFragmentManager.beginTransaction()
                 .add(R.id.frameLayout_activity_main_container, studentFragment)
+                .addToBackStack(null)
                 .commit()
 
 
@@ -39,6 +74,7 @@ class MainActivity : AppCompatActivity() {
                 .beginTransaction()
                 .add(R.id.frameLayout_activity_main_container, createStudentsFragment)
                 .hide(createStudentsFragment)
+                .addToBackStack(null)
                 .commit()
 
         } else {
@@ -46,6 +82,7 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.beginTransaction()
                     .hide(createStudentsFragment)
                     .show(studentFragment)
+                    .addToBackStack(null)
                     .commit()
             } else {
                 supportFragmentManager
