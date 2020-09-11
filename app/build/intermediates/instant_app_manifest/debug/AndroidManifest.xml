@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="org.step.students.presentation.activity.BaseActivity" />
         <activity
             android:name="org.step.students.DetailStudents"
             android:noHistory="true" />

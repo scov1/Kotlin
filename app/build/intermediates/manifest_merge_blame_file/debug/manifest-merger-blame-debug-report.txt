@@ -15,7 +15,7 @@
 11-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:5:22-62
 12
 13    <application
-13-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:7:5-24:19
+13-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:7:5-25:19
 14        android:allowBackup="true"
 14-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -32,26 +32,29 @@
 21        android:testOnly="true"
 22        android:theme="@style/AppTheme" >
 22-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:13:9-40
-23        <activity
-23-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:9-77
-24            android:name="org.step.students.DetailStudents"
-24-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:19-49
-25            android:noHistory="true" />
-25-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:50-74
-26        <activity android:name="org.step.students.presentation.activity.MainActivity" >
-26-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:9-23:20
-26-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:19-69
-27            <intent-filter>
-27-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:18:13-22:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:19:17-69
-28-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:21:17-77
-30-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:21:27-74
-31            </intent-filter>
-32        </activity>
-33    </application>
-34
-35</manifest>
+23        <activity android:name="org.step.students.presentation.activity.BaseActivity" />
+23-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:14:9-81
+23-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:14:19-69
+24        <activity
+24-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:15:9-17:40
+25            android:name="org.step.students.DetailStudents"
+25-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:16:13-43
+26            android:noHistory="true" />
+26-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:17:13-37
+27        <activity android:name="org.step.students.presentation.activity.MainActivity" >
+27-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:18:9-24:20
+27-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:18:19-69
+28            <intent-filter>
+28-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:20:17-69
+29-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:20:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:22:17-77
+31-->/Users/seda/AndroidStudioProjects/Students/app/src/main/AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34    </application>
+35
+36</manifest>

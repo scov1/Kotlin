@@ -8,6 +8,10 @@
         "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/layout_activity_base.xml.flat",
+        "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/layout/activity_base.xml"
+    },
+    {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
         "source": "/Users/seda/AndroidStudioProjects/Students/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
@@ -16,12 +20,12 @@
         "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/layout/fragment_student_create.xml"
     },
     {
-        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "/Users/seda/AndroidStudioProjects/Students/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/seda/AndroidStudioProjects/Students/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_baseline_add_24.png.flat",

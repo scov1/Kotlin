@@ -99,6 +99,9 @@ class StudentCreateFragment : Fragment() {
                 textView_fragment_student_create_group.text.toString().isEmpty() -> {
                     Toast.makeText(activity, "Group can't be empty", Toast.LENGTH_LONG).show()
                 }
+                textView_fragment_student_create_group.text.toString().isEmpty() -> {
+                    Toast.makeText(activity, "Mark can't be empty", Toast.LENGTH_LONG).show()
+                }
                 else -> {
                     val arguments = Bundle()
 

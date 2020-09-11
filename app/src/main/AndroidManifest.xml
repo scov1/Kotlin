@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".DetailStudents" android:noHistory="true" />
+        <activity android:name=".presentation.activity.BaseActivity"></activity>
+        <activity
+            android:name=".DetailStudents"
+            android:noHistory="true" />
         <activity android:name=".presentation.activity.MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
