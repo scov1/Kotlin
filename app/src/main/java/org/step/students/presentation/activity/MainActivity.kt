@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 import org.step.students.R
 import org.step.students.data.Student
+import org.step.students.presentation.fragment.NoteCreateFragment
 import org.step.students.presentation.fragment.StudentCreateFragment
 import org.step.students.presentation.fragment.StudentsFragment
 
@@ -26,30 +27,41 @@ class MainActivity : BaseActivity() {
 
         initializeDefaultFragment()
 
+        btn_fragment_students_plus_student.visibility = View.GONE
+        btn_fragment_students_best_students.visibility = View.GONE
+        editText_fragment_students_search.visibility = View.GONE
+//
+//        btn_fragment_students_plus_student.setOnClickListener{
+//            displayFragment(StudentCreateFragment())
+//            btn_fragment_students_sort_mark.visibility = View.GONE
+//            btn_fragment_students_sort_name.visibility = View.GONE
+//            btn_fragment_students_sort_random.visibility = View.GONE
+//            editText_fragment_students_search.visibility = View.GONE
+//        }
 
-        btn_fragment_students_plus_student.setOnClickListener{
-            displayFragment(StudentCreateFragment())
+        btn_fragment_add_plus_note.setOnClickListener{
+            displayFragment(NoteCreateFragment())
             btn_fragment_students_sort_mark.visibility = View.GONE
             btn_fragment_students_sort_name.visibility = View.GONE
             btn_fragment_students_sort_random.visibility = View.GONE
             editText_fragment_students_search.visibility = View.GONE
         }
-
-        btn_fragment_students_sort_name.setOnClickListener {
-            studentFragment.sortByName()
-        }
-
-        btn_fragment_students_sort_mark.setOnClickListener {
-            studentFragment.sortByMark()
-        }
-
-        btn_fragment_students_sort_random.setOnClickListener {
-            studentFragment.sortByRandom()
-        }
-
-        btn_fragment_students_best_students.setOnClickListener {
-            studentFragment.getTop()
-        }
+//
+//        btn_fragment_students_sort_name.setOnClickListener {
+//            studentFragment.sortByName()
+//        }
+//
+//        btn_fragment_students_sort_mark.setOnClickListener {
+//            studentFragment.sortByMark()
+//        }
+//
+//        btn_fragment_students_sort_random.setOnClickListener {
+//            studentFragment.sortByRandom()
+//        }
+//
+//        btn_fragment_students_best_students.setOnClickListener {
+//            studentFragment.getTop()
+//        }
 
 
         editText_fragment_students_search.addTextChangedListener(object : TextWatcher {

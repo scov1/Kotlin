@@ -114,10 +114,10 @@ class StudentCreateFragment : Fragment() {
                     )
 
 
-                    arguments.putParcelable("STUDENT", student)
-                    Log.d("Adapter","student")
-                    if(activity !=null && !activity.isFinishing && activity is MainActivity)
-                    activity.fragmentData(student)
+//                    arguments.putParcelable("STUDENT", student)
+//                    Log.d("Adapter","student")
+//                    if(activity !=null && !activity.isFinishing && activity is MainActivity)
+//                    activity.fragmentData(student)
                    Log.d("Adapter","stud2")
                 }
             }

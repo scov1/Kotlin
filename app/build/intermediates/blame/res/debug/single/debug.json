@@ -20,12 +20,12 @@
         "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/layout/fragment_student_create.xml"
     },
     {
-        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "/Users/seda/AndroidStudioProjects/Students/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_baseline_add_24.png.flat",
@@ -76,6 +76,10 @@
         "source": "/Users/seda/AndroidStudioProjects/Students/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_add_24.png"
     },
     {
+        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/layout_fragment_notes.xml.flat",
+        "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/layout/fragment_notes.xml"
+    },
+    {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/layout_fragment_note.xml.flat",
+        "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/layout/fragment_note.xml"
     },
     {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_baseline_add_24.xml.flat",
@@ -110,6 +118,10 @@
     {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/layout_fragment_note_create.xml.flat",
+        "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/layout/fragment_note_create.xml"
     },
     {
         "merged": "/Users/seda/AndroidStudioProjects/Students/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",

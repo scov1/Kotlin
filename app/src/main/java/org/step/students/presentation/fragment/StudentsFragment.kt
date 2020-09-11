@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_notes.*
 
 import kotlinx.android.synthetic.main.fragment_students.*
 import org.step.students.presentation.interfaces.ListenerStudent
@@ -20,9 +21,8 @@ import org.step.students.presentation.adapter.StudentAdapter
 
 class StudentsFragment : Fragment(), ListenerStudent {
 
-
     var students:ArrayList<Student> = ArrayList()
-    var adapter : StudentAdapter? = null
+    private var adapter : StudentAdapter? = null
     private var rootView : View? = null
 
 
@@ -144,7 +144,7 @@ class StudentsFragment : Fragment(), ListenerStudent {
         if(searchText == "" && students.size >-1) {
             students.clear()
             students.addAll(students)
-           // sortArrayByMarks()
+
         }
         else {
             val newStudents = StudentUtilsUseCase().search(students, searchText)

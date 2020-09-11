@@ -937,6 +937,7 @@ color checkbox_themeable_attribute_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color colorRed
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1670,12 +1671,14 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_fragment_add_plus_note
 id btn_fragment_students_best_students
 id btn_fragment_students_plus_student
 id btn_fragment_students_sort_mark
 id btn_fragment_students_sort_name
 id btn_fragment_students_sort_random
 id buttonPanel
+id button_fragment_note_create_add_note
 id button_fragment_student_create_add_student
 id button_fragment_student_create_photo
 id cancel_action
@@ -1852,7 +1855,9 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerview_fragment_notes
 id recyclerview_fragment_students
+id relativeLayout_fragment_note_change
 id reverseSawtooth
 id right
 id right_icon
@@ -1940,6 +1945,12 @@ id textView_fragment_item_desc
 id textView_fragment_item_mark
 id textView_fragment_item_name
 id textView_fragment_item_viewGroup
+id textView_fragment_note_create_date
+id textView_fragment_note_create_desc
+id textView_fragment_note_create_title
+id textView_fragment_note_date
+id textView_fragment_note_desc
+id textView_fragment_note_title
 id textView_fragment_student_create_desc
 id textView_fragment_student_create_group
 id textView_fragment_student_create_mark
@@ -2060,6 +2071,9 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_detail_students
 layout fragment_item
+layout fragment_note
+layout fragment_note_create
+layout fragment_notes
 layout fragment_student_create
 layout fragment_students
 layout mtrl_alert_dialog
