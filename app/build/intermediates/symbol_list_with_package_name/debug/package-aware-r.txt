@@ -1984,7 +1984,9 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id viewPager_activity_main_pager
 id view_offset_helper
+id viewpager_fragment_student_pager
 id visible
 id withText
 id withinBounds
@@ -2075,6 +2077,7 @@ layout fragment_note
 layout fragment_note_create
 layout fragment_notes
 layout fragment_student_create
+layout fragment_student_pager
 layout fragment_students
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions

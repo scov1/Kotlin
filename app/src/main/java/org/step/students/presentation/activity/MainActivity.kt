@@ -6,9 +6,12 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_main.*
 import org.step.students.R
 import org.step.students.data.Student
+import org.step.students.presentation.adapter.StudentPagerAdapter
 import org.step.students.presentation.fragment.NoteCreateFragment
 import org.step.students.presentation.fragment.StudentCreateFragment
 import org.step.students.presentation.fragment.StudentsFragment
@@ -21,11 +24,19 @@ class MainActivity : BaseActivity() {
 //    var students:ArrayList<Student> = ArrayList()
 //    var isVisibility: Boolean = false
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val pagerAdapter = StudentPagerAdapter(supportFragmentManager,students)
+        val pager : ViewPager = findViewById<ViewPager>(R.id.viewPager_activity_main_pager)
+        pager.adapter = pagerAdapter
+
         initializeDefaultFragment()
+
 
         btn_fragment_students_plus_student.visibility = View.GONE
         btn_fragment_students_best_students.visibility = View.GONE

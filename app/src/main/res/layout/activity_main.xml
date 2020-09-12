@@ -9,6 +9,12 @@
     tools:context=".presentation.activity.MainActivity">
 
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager_activity_main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
         <FrameLayout
             android:id="@+id/frameLayout_activity_main_container"
             android:layout_width="match_parent"

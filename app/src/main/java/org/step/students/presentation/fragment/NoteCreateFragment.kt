@@ -72,12 +72,12 @@ class NoteCreateFragment : Fragment() {
                     textView_fragment_note_create_desc.text.toString(),
                     LocalDate.now()
                 )
-
-
-                arguments.putParcelable("NOTE", note)
-                Log.d("Adapter", "note")
-                if (activity != null && !activity.isFinishing && activity is MainActivity)
-                   activity.fragmentData(note)
+//
+//
+//                arguments.putParcelable("STUDENT", note)
+//                Log.d("Adapter", "note")
+//                if (activity != null && !activity.isFinishing && activity is MainActivity)
+//                   activity.fragmentData(note)
                     Log.d("Adapter", "note2 get")
             }
         }

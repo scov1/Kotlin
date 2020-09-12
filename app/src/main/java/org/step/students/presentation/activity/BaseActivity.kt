@@ -24,77 +24,77 @@ open class BaseActivity : AppCompatActivity() {
 
     fun displayFragment(fragmentTemp: Fragment) {
         if(currentFragment != null) {
-//            if(isVisibility) {
-//                supportFragmentManager
-//                    .beginTransaction()
-//                    .hide(createStudentsFragment)
-//                    .show(studentFragment)
-//                    .commit()
-//            } else {
-//                supportFragmentManager
-//                    .beginTransaction()
-//                    .hide(studentFragment)
-//                    .show(createStudentsFragment)
-//                    .commit()
-//            }
             if(isVisibility) {
                 supportFragmentManager
                     .beginTransaction()
-                    .hide(createNoteFragment)
-                    .show(noteFragment)
+                    .hide(createStudentsFragment)
+                    .show(studentFragment)
                     .commit()
             } else {
                 supportFragmentManager
                     .beginTransaction()
-                    .hide(noteFragment)
-                    .show(createNoteFragment)
+                    .hide(studentFragment)
+                    .show(createStudentsFragment)
                     .commit()
             }
+//            if(isVisibility) {
+//                supportFragmentManager
+//                    .beginTransaction()
+//                    .hide(createNoteFragment)
+//                    .show(noteFragment)
+//                    .commit()
+//            } else {
+//                supportFragmentManager
+//                    .beginTransaction()
+//                    .hide(noteFragment)
+//                    .show(createNoteFragment)
+//                    .commit()
+//            }
 
             isVisibility = !isVisibility
         }
     }
 
     fun initializeDefaultFragment() {
-//        currentFragment = StudentsFragment()
-//
-//        supportFragmentManager
-//            .beginTransaction()
-//            .add(R.id.frameLayout_activity_main_container, studentFragment)
-//            .commit()
-//
-//        supportFragmentManager
-//            .beginTransaction()
-//            .add(R.id.frameLayout_activity_main_container, createStudentsFragment)
-//            .hide(createStudentsFragment)
-//            .commit()
-        currentFragment = NoteFragment()
+        currentFragment = StudentsFragment()
 
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.frameLayout_activity_main_container, noteFragment)
+            .add(R.id.frameLayout_activity_main_container, studentFragment)
             .commit()
 
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.frameLayout_activity_main_container, createNoteFragment)
-            .hide(createNoteFragment)
+            .add(R.id.frameLayout_activity_main_container, createStudentsFragment)
+            .hide(createStudentsFragment)
             .commit()
+//        currentFragment = NoteFragment()
+//
+//        supportFragmentManager
+//            .beginTransaction()
+//            .add(R.id.frameLayout_activity_main_container, noteFragment)
+//            .commit()
+//
+//        supportFragmentManager
+//            .beginTransaction()
+//            .add(R.id.frameLayout_activity_main_container, createNoteFragment)
+//            .hide(createNoteFragment)
+//            .commit()
     }
 
+
+    fun fragmentData(student: Student){
+
+        studentFragment.addStudent(student,studentFragment.students)
+        displayFragment(StudentsFragment())
+
+    }
+
+
+//    fun fragmentData(note: Note){
 //
-//    fun fragmentData(student: Student){
-//
-//        studentFragment.addStudent(student,studentFragment.students)
-//        displayFragment(StudentsFragment())
+//        noteFragment.addNote(note,noteFragment.notes)
+//        displayFragment(NoteFragment())
 //
 //    }
-
-
-    fun fragmentData(note: Note){
-
-        noteFragment.addNote(note,noteFragment.notes)
-        displayFragment(NoteFragment())
-
-    }
 }
