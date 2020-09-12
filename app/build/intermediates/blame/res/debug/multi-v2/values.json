@@ -99,11 +99,11 @@
                 {
                     "source": "/Users/seda/AndroidStudioProjects/Students/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,5",
-                        "startColumns": "-1,-1,-1,4",
-                        "startOffsets": "-1,-1,-1,199",
-                        "endColumns": "-1,-1,-1,42",
-                        "endOffsets": "-1,-1,-1,237"
+                        "startLines": "-1,2,-1,-1",
+                        "startColumns": "-1,4,-1,-1",
+                        "startOffsets": "-1,55,-1,-1",
+                        "endColumns": "-1,46,-1,-1",
+                        "endOffsets": "-1,97,-1,-1"
                     },
                     "to": {
                         "startLines": "398,399,400,401",

@@ -1918,6 +1918,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id tabLayout_activity_main_tabs
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans

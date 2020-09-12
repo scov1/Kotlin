@@ -29,12 +29,14 @@ open class BaseActivity : AppCompatActivity() {
                     .beginTransaction()
                     .hide(createStudentsFragment)
                     .show(studentFragment)
+                    .addToBackStack(null)
                     .commit()
             } else {
                 supportFragmentManager
                     .beginTransaction()
                     .hide(studentFragment)
                     .show(createStudentsFragment)
+                    .addToBackStack(null)
                     .commit()
             }
 //            if(isVisibility) {
@@ -61,11 +63,13 @@ open class BaseActivity : AppCompatActivity() {
         supportFragmentManager
             .beginTransaction()
             .add(R.id.frameLayout_activity_main_container, studentFragment)
+            .addToBackStack(null)
             .commit()
 
         supportFragmentManager
             .beginTransaction()
             .add(R.id.frameLayout_activity_main_container, createStudentsFragment)
+            .addToBackStack(null)
             .hide(createStudentsFragment)
             .commit()
 //        currentFragment = NoteFragment()
