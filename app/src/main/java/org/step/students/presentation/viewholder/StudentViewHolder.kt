@@ -25,6 +25,7 @@ class StudentViewHolder(view:View, private var listener: ListenerStudent):Recycl
             userDesc.text = student.desc
             userGroup.text = student.group
             userMark.text = student.mark.toString()
+
             itemView.setOnClickListener { listener.onItemClick(student) }
 
             Log.d("Adapter","Tom")

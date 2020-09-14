@@ -71,12 +71,12 @@ class StudentsFragment : Fragment(), ListenerStudent {
 
     private fun initializeData(){
 
-        students.add(Student("Tom Ford","Good Man!" ,"SEP-172",10f, R.drawable.img1))
-        students.add(Student("Roberto Cavalli","Miuuu" ,"SEB-181",12f, R.drawable.img1))
-        students.add(Student("Dior","Good girl", "SEP-182",8f, R.drawable.img1))
-        students.add(Student("Armani","Good Man!" ,"SEP-172",7f, R.drawable.img1))
-        students.add(Student("Tommy Hilfiger","Miuuu" ,"SEB-181",11f, R.drawable.img1))
-        students.add(Student("Lacoste","Good girl", "SEP-182",5f, R.drawable.img1))
+        students.add(Student("Tom Ford","Good Man!" ,"SEP-172","05-11-2019",10f, R.drawable.img1))
+        students.add(Student("Roberto Cavalli","Miuuu" ,"SEB-181","04-11-2019",12f, R.drawable.img1))
+        students.add(Student("Dior","Good girl", "SEP-182","15-11-2019",8f, R.drawable.img1))
+        students.add(Student("Armani","Good Man!" ,"SEP-172","25-11-2019",7f, R.drawable.img1))
+        students.add(Student("Tommy Hilfiger","Miuuu" ,"SEB-181","28-11-2019",11f, R.drawable.img1))
+        students.add(Student("Lacoste","Good girl", "SEP-182","15-05-2020",5f, R.drawable.img1))
 
     }
 

@@ -1,6 +1,7 @@
 package org.step.students.presentation.fragment
 
 import android.app.Activity
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -12,6 +13,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.DatePicker
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
@@ -19,9 +21,12 @@ import kotlinx.android.synthetic.main.fragment_student_create.*
 import org.step.students.presentation.activity.MainActivity
 import org.step.students.R
 import org.step.students.data.Student
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.*
 
 
-class StudentCreateFragment : Fragment() {
+class StudentCreateFragment : DatePickerDialog.OnDateSetListener , Fragment() {
 
     private var rootView : View? = null
 
@@ -50,7 +55,8 @@ class StudentCreateFragment : Fragment() {
     }
 
 
-    @RequiresApi(Build.VERSION_CODES.M)
+ //   @RequiresApi(Build.VERSION_CODES.M)
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initializeListeners()
@@ -60,6 +66,12 @@ class StudentCreateFragment : Fragment() {
         button_fragment_student_create_add_student.setOnClickListener{
             initializeData()
         }
+
+
+//        textView_fragment_student_create_birthday.setOnClickListener {
+//            val dateDialog = DatePickerDialog(context, this, LocalDate.now().year, LocalDate.now().monthValue - 1, LocalDate.now().dayOfMonth)
+//            dateDialog.show()
+//        }
 
 
 
@@ -109,7 +121,11 @@ class StudentCreateFragment : Fragment() {
                         textView_fragment_student_create_name.text.toString(),
                         textView_fragment_student_create_desc.text.toString(),
                         textView_fragment_student_create_group.text.toString(),
-                        textView_fragment_student_create_mark.text.toString().toFloat()
+                        textView_fragment_student_create_birthday.text.toString(),
+                        textView_fragment_student_create_mark.text.toString().toFloat(),
+
+
+
 
                     )
 
@@ -121,6 +137,7 @@ class StudentCreateFragment : Fragment() {
                    Log.d("Adapter","stud2")
                 }
             }
+
         }
 
 
@@ -137,4 +154,13 @@ class StudentCreateFragment : Fragment() {
                     imageView_fragment_student_create_img.setImageBitmap(bmp)
             }
     }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    override fun onDateSet(view: DatePicker?, year: Int, monthOfYear: Int, dayOfMonth: Int) {
+        val formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale.getDefault())
+        val date = LocalDate.of(year, monthOfYear, dayOfMonth)
+        textView_fragment_student_create_birthday?.setText(date.format(formatter))
+    }
+
+
 }

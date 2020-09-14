@@ -9,10 +9,13 @@ data class Student(
     var name: String?,
     var desc: String?,
     var group: String?,
+    var birthday : String?,
     var mark: Float? = null,
+
     var avatar: Int? = null
     ) : Parcelable {
     constructor(parcel: Parcel) : this(
+        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
@@ -23,7 +26,9 @@ data class Student(
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
         parcel.writeString(group)
+        parcel.writeString(birthday)
         parcel.writeValue(avatar)
+
     }
 
     override fun describeContents(): Int {

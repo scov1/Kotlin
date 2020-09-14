@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_student_pager.*
 import org.step.students.R
 import org.step.students.data.Student
@@ -40,6 +41,9 @@ class StudentPagerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         DetailStudentsFragment()
+
+
+
     }
 }
 

@@ -7,38 +7,6 @@
 
     tools:context=".presentation.activity.MainActivity">
 
-
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#B50B1635"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-
-                <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/tabLayout_activity_main_tabs"
-                    android:layout_width="match_parent"
-                    android:layout_height="?android:attr/actionBarSize"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:tabGravity="fill"
-                    app:tabMode="fixed"
-                    app:tabTextColor="#F8F8F8" />
-
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/viewPager_activity_main_pager"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-        </com.google.android.material.appbar.AppBarLayout>
         <FrameLayout
             android:id="@+id/frameLayout_activity_main_container"
             android:layout_width="match_parent"
@@ -131,6 +99,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btn_fragment_students_plus_student"
                     android:layout_width="wrap_content"
@@ -142,12 +111,13 @@
                     android:elevation="6dp"
                     android:src="@drawable/ic_baseline_add_24"
                     android:text="Add Student"
-                    app:backgroundTint="#DFCFCF"
+                    app:backgroundTint="#FF0000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:pressedTranslationZ="12dp" />
+
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btn_fragment_add_plus_note"
@@ -160,7 +130,7 @@
                     android:elevation="6dp"
                     android:src="@drawable/ic_baseline_add_24"
                     android:text="Add Note"
-                    app:backgroundTint="#DFCFCF"
+                    app:backgroundTint="#F1EBEB"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
@@ -168,5 +138,42 @@
                     app:pressedTranslationZ="12dp" />
 
         </FrameLayout>
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B50B1635"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout_activity_main_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabTextColor="#F8F8F8" />
+
+
+
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager_activity_main_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

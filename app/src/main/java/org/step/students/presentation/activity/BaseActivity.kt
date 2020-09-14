@@ -58,7 +58,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     fun initializeDefaultFragment() {
-        currentFragment = StudentsFragment()
+     //   currentFragment = StudentsFragment()
 
         supportFragmentManager
             .beginTransaction()

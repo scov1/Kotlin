@@ -1952,6 +1952,7 @@ id textView_fragment_note_create_title
 id textView_fragment_note_date
 id textView_fragment_note_desc
 id textView_fragment_note_title
+id textView_fragment_student_create_birthday
 id textView_fragment_student_create_desc
 id textView_fragment_student_create_group
 id textView_fragment_student_create_mark
