@@ -1671,6 +1671,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_activity_main_click
 id btn_fragment_add_plus_note
 id btn_fragment_students_best_students
 id btn_fragment_students_plus_student

@@ -7,6 +7,8 @@
 
     tools:context=".presentation.activity.MainActivity">
 
+
+
         <FrameLayout
             android:id="@+id/frameLayout_activity_main_container"
             android:layout_width="match_parent"
@@ -149,6 +151,23 @@
             app:layout_constraintTop_toTopOf="parent">
 
 
+                <Button
+                    android:id="@+id/btn_activity_main_click_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    app:layout_constraintEnd_toStartOf="@+id/viewPager_activity_main_pager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/btn_activity_main_click_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    app:layout_constraintEnd_toStartOf="@+id/viewPager_activity_main_pager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tabLayout_activity_main_tabs"
                     android:layout_width="match_parent"
@@ -161,9 +180,6 @@
                     app:tabTextColor="#F8F8F8" />
 
 
-
-
-
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPager_activity_main_pager"
                     android:layout_width="match_parent"
@@ -171,9 +187,14 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent" >
+
+                </androidx.viewpager.widget.ViewPager>
+
 
 
         </com.google.android.material.appbar.AppBarLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

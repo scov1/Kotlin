@@ -5,14 +5,25 @@ import android.os.Build
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.DatePicker
 import androidx.annotation.RequiresApi
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
+import io.reactivex.Observable
+import io.reactivex.Observer
+import io.reactivex.Scheduler
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_student_create.*
+import kotlinx.android.synthetic.main.fragment_students.*
 import org.step.students.R
+import org.step.students.data.Student
+import org.step.students.data.database.*
 import org.step.students.presentation.adapter.StudentPagerAdapter
 import org.step.students.presentation.fragment.NoteCreateFragment
 import org.step.students.presentation.fragment.NoteFragment
@@ -31,7 +42,9 @@ class MainActivity : BaseActivity(), DatePickerDialog.OnDateSetListener {
 //    var isVisibility: Boolean = false
       private var tabLayout: TabLayout? = null
       private var viewPager: ViewPager? = null
-
+      private var db : EducationDatabase? = null
+      private var studentDao : StudentDao? = null
+      private var subjectDao : SubjectDao? = null
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +53,60 @@ class MainActivity : BaseActivity(), DatePickerDialog.OnDateSetListener {
 
 
    //    initializeDefaultFragment()
+
+
+        val button = findViewById<Button>(R.id.btn_activity_main_click_student)
+        button.setOnClickListener (View.OnClickListener {
+            Observable.fromCallable(
+                {
+                    db = EducationDatabase.getDatabase(this)
+                    studentDao = db?.StudentDao()
+                    var student = StudentEntity(12,"Jack","Fantastic man","SEP-180","19-02-1992",12f,R.drawable.img1)
+                    with(studentDao){
+                        this?.initiateInsertStudent(student)
+
+                    }
+                    db?.StudentDao()?.getStudents()
+                }
+            ).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(
+                {
+                    Log.d("adapter",it?.size.toString())
+
+                },
+                {
+                    Log.d("error","error")
+                }
+            )
+        })
+
+
+        val button2 = findViewById<Button>(R.id.btn_activity_main_click_subject)
+        button2.setOnClickListener (View.OnClickListener {
+            Observable.fromCallable(
+                {
+                    db = EducationDatabase.getDatabase(this)
+                    subjectDao = db?.SubjectDao()
+                    var subject = SubjectEntity(11,"SEP-182")
+                    with(subjectDao){
+                        this?.initiateInsertSubject(subject)
+
+                    }
+                    db?.SubjectDao()?.getSubjects()
+                }
+            ).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(
+                {
+                    Log.d("size",it?.size.toString())
+
+                },
+                {
+                    Log.d("error","error")
+                }
+            )
+        })
+
+
+
+
 
 
 

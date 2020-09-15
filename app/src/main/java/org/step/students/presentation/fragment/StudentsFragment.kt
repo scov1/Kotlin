@@ -15,8 +15,10 @@ import kotlinx.android.synthetic.main.fragment_students.*
 import org.step.students.presentation.interfaces.ListenerStudent
 import org.step.students.R
 import org.step.students.data.Student
+import org.step.students.domain.RepositoryModule
 import org.step.students.domain.StudentUtilsUseCase
 import org.step.students.presentation.adapter.StudentAdapter
+import javax.inject.Inject
 
 
 class StudentsFragment : Fragment(), ListenerStudent {
@@ -24,6 +26,8 @@ class StudentsFragment : Fragment(), ListenerStudent {
     var students:ArrayList<Student> = ArrayList()
     private var adapter : StudentAdapter? = null
     private var rootView : View? = null
+    @Inject
+    lateinit var studentsUtilsUseCase: StudentUtilsUseCase
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +68,7 @@ class StudentsFragment : Fragment(), ListenerStudent {
         initializeListeners()
 
         adapter?.notifyDataSetChanged()
+
 
         Log.d("Adapter", "Initialize")
 
