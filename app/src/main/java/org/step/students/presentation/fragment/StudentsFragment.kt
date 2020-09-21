@@ -8,15 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_notes.*
 
 import kotlinx.android.synthetic.main.fragment_students.*
 import org.step.students.presentation.interfaces.ListenerStudent
 import org.step.students.R
 import org.step.students.data.Student
-import org.step.students.domain.RepositoryModule
-import org.step.students.domain.StudentUtilsUseCase
+import org.step.students.domain.stud.StudentUtilsUseCase
 import org.step.students.presentation.adapter.StudentAdapter
 import javax.inject.Inject
 
@@ -60,6 +57,10 @@ class StudentsFragment : Fragment(), ListenerStudent {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+      //  DaggerRepositoryComponent.builder().repositoryModule(RepositoryModule(this)).build().inject(this)
+
+
 
         initializeData()
         initializeAdapter()

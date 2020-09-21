@@ -3,6 +3,7 @@
     package="org.step.students">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,9 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".presentation.activity.BaseActivity"></activity>
-        <activity
-            android:name=".DetailStudents"
-            android:noHistory="true" />
+
         <activity android:name=".presentation.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
