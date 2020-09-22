@@ -12,7 +12,7 @@ class Api {
 
         fun convertUnixToDate(dt: Long): String? {
             val date = Date(dt * 1000L)
-            val sdf = SimpleDateFormat("HH:mm EEE MM yyyy")
+            val sdf = SimpleDateFormat("HH:mm dd EEE MM yyyy")
             return sdf.format(date)
         }
 

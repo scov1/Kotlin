@@ -3,7 +3,7 @@
 
     <item>
         <shape android:shape="rectangle">
-            <stroke android:color="@android:color/black"
+            <stroke android:color="@color/bgMain"
                 android:width="1dp">
 
             </stroke>

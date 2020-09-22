@@ -7,11 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
+import com.squareup.picasso.Picasso
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.fragment_today.*
 import org.step.forecast.R
 import org.step.forecast.data.api.Api.Companion.API_ID
+import org.step.forecast.data.api.Api.Companion.convertUnixToDate
+import org.step.forecast.data.api.Api.Companion.convertUnixToHour
 import org.step.forecast.data.api.Api.Companion.current_location
 import org.step.forecast.data.retrofit.RetrofitClient
 import org.step.forecast.presentation.interfaces.IWeather
@@ -47,26 +51,10 @@ class TodayFragment : Fragment() {
         }
     }
 
-//    companion object{
-//
-//        fun getInstance(): TodayFragment? {
-//            if (TodayFragment().instance == null) TodayFragment().instance = TodayFragment()
-//            return TodayFragment().instance
-//        }
-//
-//    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        compositeDisposable= CompositeDisposable()
-        var retrofit : Retrofit? = RetrofitClient.getInstance()
-        mService = retrofit!!.create(IWeather::class.java)
-
-        initializeViews()
-
-        getWeatherInfo()
 
 
     }
@@ -80,10 +68,21 @@ class TodayFragment : Fragment() {
         return rootView
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-    fun initializeViews(){
+
+        compositeDisposable= CompositeDisposable()
+        var retrofit : Retrofit? = RetrofitClient.getInstance()
+        mService = retrofit!!.create(IWeather::class.java)
+
+        initializeView()
+
+        getWeatherInfo()
+    }
 
 
+    fun initializeView(){
 
         img_weather =rootView?.findViewById(R.id.imageView_fragment_today_img)
         city_name = rootView?.findViewById(R.id.textView_fragment_today_city_name)
@@ -116,45 +115,44 @@ class TodayFragment : Fragment() {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
                     { weatherResult ->
-//                        Picasso.get().load(
-//                            StringBuilder("https://openweathermap.org/img/wn/")
-//                                .append(weatherResult?.getWeather()!![0].getIcon())
-//                                .append(".png").toString()
-//                        ).into(img_weather)
-//                        city_name!!.text = weatherResult?.getName()
-//                        today_desc!!.text = StringBuilder("Weather in")
-//                            .append(weatherResult?.getName()).toString()
-//                        today_temp!!.text =
-//                            StringBuilder(
-//                                weatherResult?.getMain()!!.getTemp().toString()
-//                            ).append("C").toString()
-//                        today_date_time!!.text = convertUnixToDate(
-//                            weatherResult.getDt()!!.toLong()
-//                        )
-//                        today_pressure!!.text =
-//                            StringBuilder(
-//                                weatherResult.getMain()!!.getPressure().toString()
-//                            ).append("hpa").toString()
-//                        today_humidity!!.text =
-//                            StringBuilder(
-//                                weatherResult.getMain()!!.getHumidity().toString()
-//                            ).append("%").toString()
-//                        today_sunrise!!.text =
-//                            weatherResult.getSys()!!.getSunrise()?.toLong()?.let {
-//                                convertUnixToHour(
-//                                    it
-//                                )
-//                            }
-//                        today_sunset!!.text = weatherResult.getSys()!!.getSunset()?.toLong()?.let {
-//                            convertUnixToHour(
-//                                it
-//                            )
-//                        }
-//                        today_coord!!.text =
-//                            StringBuilder("[").append(weatherResult.getCoord().toString())
-//                                .append("]").toString()
-//                        today_weather_menu!!.visibility = View.VISIBLE
-//                        today_loading!!.visibility = View.GONE
+                        Picasso.get().load(
+                            StringBuilder("https://openweathermap.org/img/w/")
+                                .append(weatherResult?.getWeather()!![0].getIcon())
+                                .append(".png").toString()
+                        ).into(img_weather)
+                        textView_fragment_today_city_name!!.text = weatherResult?.getName()
+                        today_desc!!.text = StringBuilder("Weather in ")
+                            .append(weatherResult?.getName()).toString()
+                        today_temp!!.text =
+                            StringBuilder(
+                                weatherResult?.getMain()!!.getTemp().toString()
+                            ).append("°C").toString()
+                        today_date_time!!.text = convertUnixToDate(
+                            weatherResult.getDt()!!.toLong()
+                        )
+                        today_pressure!!.text =
+                            StringBuilder(
+                                weatherResult.getMain()!!.getPressure().toString()
+                            ).append("hpa").toString()
+                        today_humidity!!.text =
+                            StringBuilder(
+                                weatherResult.getMain()!!.getHumidity().toString()
+                            ).append("%").toString()
+                        today_sunrise!!.text =
+                            weatherResult.getSys()!!.getSunrise()?.toLong()?.let {
+                                convertUnixToHour(
+                                    it
+                                )
+                            }
+                        today_sunset!!.text = weatherResult.getSys()!!.getSunset()?.toLong()?.let {
+                            convertUnixToHour(
+                                it
+                            )
+                        }
+                        today_coord!!.text =
+                           weatherResult.getCoord().toString()
+                        today_weather_menu!!.visibility = View.VISIBLE
+                        today_loading!!.visibility = View.GONE
 
                         Log.d("test",weatherResult.toString())
                     },
@@ -167,5 +165,10 @@ class TodayFragment : Fragment() {
                         ).show()
                     })
         )
+    }
+
+    override fun onStop() {
+        compositeDisposable?.clear()
+        super.onStop()
     }
 }

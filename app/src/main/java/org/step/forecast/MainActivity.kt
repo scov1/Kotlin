@@ -20,6 +20,7 @@ import com.google.android.gms.location.*
 import com.google.android.material.tabs.TabLayout
 import org.step.forecast.data.api.Api
 import org.step.forecast.presentation.adapter.ViewPagerAdapter
+import org.step.forecast.presentation.fragment.FiveDaysFragment
 import org.step.forecast.presentation.fragment.TodayFragment
 
 
@@ -155,6 +156,8 @@ class MainActivity : AppCompatActivity() {
     private fun setupViewPager(viewPager: ViewPager?) {
         var adapter  = ViewPagerAdapter(supportFragmentManager)
         adapter.addFragment(TodayFragment.getInstance(), "Today")
+        adapter.addFragment(FiveDaysFragment.getInstance(),"5 Days")
+
         viewPager?.adapter = adapter
     }
 

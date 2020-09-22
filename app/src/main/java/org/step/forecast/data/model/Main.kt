@@ -5,7 +5,7 @@ class Main {
     private var feels_like = 0.0
     private var temp_min = 0.0
     private var temp_max = 0.0
-    private var pressure = 0
+    private var pressure = 0.0
     private var humidity = 0
 
     fun Main(){}
@@ -53,11 +53,11 @@ class Main {
         }
     }
 
-    fun getPressure(): Int? {
+    fun getPressure(): Double? {
         return pressure
     }
 
-    fun setPressure(pressure : Int?) {
+    fun setPressure(pressure : Double?) {
         if (pressure != null) {
             this.pressure = pressure
         }
